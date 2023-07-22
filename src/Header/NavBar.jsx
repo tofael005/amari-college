@@ -19,8 +19,9 @@ const NavBar = () => {
                         toggle ? <AiOutlineClose className='text-2xl' onClick={() => setToggle(!toggle)} /> : <GiHamburgerMenu className="text-2xl" onClick={() => setToggle(!toggle)} />
                     }
                 </span>
+               
 
-                <ul className={`flex items-center duration-300 flex-col py-5 md:p-0 text-white md:text-gray-900 bg-opacity-90 top-14 bg-black md:bg-transparent w-full text-center md:w-auto md:flex-row gap-4 absolute md:static z-50 ${toggle ? "left-0" : "-left-full"}`}>
+                <ul className={`flex items-center duration-300 flex-col py-5 md:p-0 text-white md:text-gray-900 bg-opacity-90 top-14 bg-black md:bg-transparent w-full text-center md:w-auto md:flex-row gap-3 absolute md:static z-50 ${toggle ? "left-0" : "-left-full"}`}>
                     <li className="hover:bg-[#05b6d1] duration-300 px-3 py-2 rounded-md hover:text-white font-semibold">
                         <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>Home</NavLink>
                     </li>
