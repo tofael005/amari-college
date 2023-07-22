@@ -1,0 +1,38 @@
+[
+    {
+        "image": "https://i.ibb.co/02h1JVh/class6.jpg",
+        "title": "Science and Technology",
+        "seat": 13,
+        "description": "Pushing the boundaries of innovation: The dynamic world of science and technology continues to amaze with groundbreaking discoveries, revolutionary advancements, and the promise of a tech-driven future shaping human progress."
+    },
+    {
+        "image": "https://i.ibb.co/pZ2hw3Q/class5.jpg",
+        "title": "Art and Drawing",
+        "seat": 20,
+        "description": "Unleashing creativity through art and drawing: From traditional techniques to digital mediums, artists explore their imagination, express emotions, and captivate audiences, bridging cultures and leaving a lasting impact on society."
+    },
+    {
+        "image": "https://i.ibb.co/j5YgB9t/class4.jpg",
+        "title": "Business and Management",
+        "seat": 16,
+        "description": "Navigating the corporate landscape: Business and management strategies evolve to meet global challenges, innovation, sustainable practices, and effective leadership, organizations towards success in an ever-changing marketplace."
+    },
+    {
+        "image": "https://i.ibb.co/PQ5YHY4/class2.jpg",
+        "title": "Language Learning",
+        "seat": 12,
+        "description": "Unlocking the world through language learning: Embracing new tongues opens doors to cultures, fosters global understanding, and enhances cognitive abilities, empowering individuals to communicate fluently in an interconnected world."
+    },
+    {
+        "image": "https://i.ibb.co/vVQdrNL/class3.jpg",
+        "title": "Basic Science",
+        "seat": 14,
+        "description": "Foundations of knowledge: Basic science unravels the fundamental principles governing the natural world, paving the way for groundbreaking discoveries, technological advancements, and a deeper understanding of the universe we inhabit."
+    },
+    {
+        "image": "https://i.ibb.co/ydxNgs1/class1.jpg",
+        "title": "Law of Humanity",
+        "seat": 17,
+        "description": "The Law of Humanity: A moral compass guiding legal principles to uphold human rights, dignity, and justice, advocating for equality, compassion, and protection of the vulnerable, shaping a more compassionate and just society."
+    }
+]

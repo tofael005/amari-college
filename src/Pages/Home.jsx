@@ -1,8 +1,13 @@
+import Classes from "../Components/Clasees/Classes";
+import Banner from "../Header/Banner";
+import Something from "./Something";
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <Banner />
+            <Something />
+            <Classes/>
         </div>
     );
 };

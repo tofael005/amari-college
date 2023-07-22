@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 const NavBar = () => {
     const [toggle, setToggle] = useState()
     return (
-        <div className="bg-orange-300">
+        <div className="bg-[#05b6d1]">
            <div className="max-w-[1240px] mx-auto flex justify-between items-center p-4">
             <div>
                 <h1>LOGO</h1>
