@@ -8,6 +8,8 @@ import About from "../Pages/About";
 import LogIn from "../log/LogIn"
 import Register from "../log/Register"
 import Science from "../Pages/Blog/Science";
+import ArtDrawing from "../Pages/Blog/ArtDrawing";
+import Business from "../Pages/Blog/Business";
 
 const router = createBrowserRouter([
     {
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
             {
                 path: "/science",
                 element: <Science />
+            },
+            {
+                path: "/art",
+                element: <ArtDrawing />
+            },
+            {
+                path: "/business",
+                element: <Business />
             }
         ]
     }
