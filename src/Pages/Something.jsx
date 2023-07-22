@@ -9,7 +9,7 @@ const Something = () => {
     return (
         <div className="max-w-[1240px] mx-auto mt-10 mb-20">
             <h1 className="text-center my-6 text-4xl font-bold text-[#05b6d1]">Planning for the students</h1>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 px-3">
                 <div className="flex gap-4 items-center border p-4 shadow-md rounded-md">
                     <MdOutlineSportsBaseball className="text-9xl" />
                     <div>
