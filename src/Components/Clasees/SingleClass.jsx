@@ -10,7 +10,7 @@ const SingleClass = ({singleData}) => {
                     <p>Seat: {seat}</p>
                     <p className="my-3">{description}</p>
                 </div>
-                <button className="block mx-auto bg-[#05b6d1] text-white px-4 py-2 rounded-full hover:bg-[#0b96ac] duration-300 hover:font-semibold my-4">Join Now</button>
+                <button className="block mx-auto bg-[#05b6d1] text-white px-4 py-2 rounded-full hover:bg-[#0b96ac] duration-300 font-semibold my-4">Join Now</button>
             </div>
         </div>
     );
