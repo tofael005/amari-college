@@ -7,7 +7,7 @@ import logo from "../assets/logo.png"
 const NavBar = () => {
     const [toggle, setToggle] = useState()
     return (
-        <div className="shadow">
+        <div className="shadow-md">
             <div className="max-w-[1240px] mx-auto flex justify-between items-center p-4">
                 <div className="flex items-center gap-2">
                     <Link to="/"> <img className="w-16" src={logo} alt="" /></Link>
@@ -35,6 +35,12 @@ const NavBar = () => {
                     </li>
                     <li className="hover:bg-[#05b6d1] duration-300 px-3 py-2 rounded-md hover:text-white font-semibold">
                         <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>Blog</NavLink>
+                    </li>
+                    
+
+                    <li>{
+                         <button  className="bg-[#05b6d1] rounded px-6 py-2 text-white font-semibold"><Link to="/login">LogIn</Link></button>
+                    }
                     </li>
                 </ul>
             </div>
