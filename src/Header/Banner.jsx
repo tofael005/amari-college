@@ -24,12 +24,13 @@ const Banner = () => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
+                    className="mySwiper h-[92vh]"
                 >
-                    <div className="w-full md:h-[600px]">
+                    <div>
                         <SwiperSlide><img src={ban1} alt="" /></SwiperSlide>
                         <SwiperSlide><img src={ban2} alt="" /></SwiperSlide>
                         <SwiperSlide><img src={ban3} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={ban2} alt="" /></SwiperSlide>
                     </div>
                 </Swiper>
             </div>

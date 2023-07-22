@@ -18,7 +18,7 @@ const NavBar = () => {
                 }
             </span>
 
-            <ul className={`flex items-center duration-300 flex-col py-5 md:p-0 text-white md:text-gray-900 bg-opacity-90 top-14 bg-black md:bg-transparent w-full text-center md:w-auto md:flex-row gap-2 absolute md:static z-50 ${toggle ? "left-0" : "-left-full"}`}>
+            <ul className={`flex items-center duration-300 flex-col py-5 md:p-0 text-white md:text-gray-900 bg-opacity-90 top-14 bg-black md:bg-transparent w-full text-center md:w-auto md:flex-row gap-6 absolute md:static z-50 ${toggle ? "left-0" : "-left-full"}`}>
                 <li>
                     <NavLink to="/">Home</NavLink>
                 </li>
@@ -29,7 +29,7 @@ const NavBar = () => {
                     <NavLink to="/admission">Admission</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/myCollege">My College</NavLink>
+                    <NavLink to="/myCollege">My-College</NavLink>
                 </li>
                 <li>
                     <NavLink to="/about">About Us</NavLink>
