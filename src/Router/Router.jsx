@@ -7,6 +7,7 @@ import MyCollege from "../Pages/MyCollege";
 import About from "../Pages/About";
 import LogIn from "../log/LogIn"
 import Register from "../log/Register"
+import Science from "../Pages/Blog/Science";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path: "/register",
                 element: <Register />
+            },
+            {
+                path: "/science",
+                element: <Science />
             }
         ]
     }

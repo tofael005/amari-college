@@ -1,6 +1,7 @@
 import Classes from "../Components/Clasees/Classes";
 import Teachers from "../Components/Teachers/Teachers";
 import Banner from "../Header/Banner";
+import About from "./About";
 import Something from "./Something";
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
             <Something />
             <Classes />
             <Teachers />
+            <About />
         </div>
     );
 };

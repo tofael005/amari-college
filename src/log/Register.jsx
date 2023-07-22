@@ -5,7 +5,7 @@ const Register = () => {
     return (
         <div>
             <main className="px-3 rounded-md">
-            <div className='max-w-[700px] mx-auto mt-16 bg-slate-100 p-4'>
+            <div className='max-w-[700px] mx-auto mt-16 bg-slate-100 p-4 rounded-md'>
                 <h1 className='text-center text-4xl mt-8 font-bold text-[#05b6d1]'>Register NOW!</h1>
                 <form className=' py-5 bg-slate-100 rounded md:w-[530px]  mx-auto my-5'>
                     <label className="font-semibold" htmlFor="">Full Name</label> <br />
