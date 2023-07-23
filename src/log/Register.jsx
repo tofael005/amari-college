@@ -37,7 +37,7 @@ const Register = () => {
         <div>
             <main className="px-3 rounded-md">
                 <div className='max-w-[700px] mx-auto mt-16 bg-slate-100 p-4 rounded-md'>
-                    <h1 className='text-center text-4xl mt-8 font-bold text-[#05b6d1]'>Register NOW!</h1>
+                    <h1 className='text-center text-4xl mt-8 font-bold text-[#05b6d1]]'>Register NOW!</h1>
                     <form onSubmit={handleRegister} className=' py-5 bg-slate-100 rounded md:w-[530px]  mx-auto my-5'>
                         <label className="font-semibold" htmlFor="">Full Name</label> <br />
                         <input onChange={(e) => setName(e.target.value)} className='w-full p-3 rounded mb-3 mt-1' type="text" name='name' placeholder='Enter user  name' required />  <br />
