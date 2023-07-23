@@ -4,42 +4,54 @@
         "name": "Notre Dame College USA",
         "rating": 5,
         "admission": "23 July 2023",
-        "research": 9
+        "research": 9,
+        "event": "Christmas Day is a joyous celebration of love, family, and giving. It fills hearts with warmth, lights up homes with laughter, and spreads the spirit of hope. People gather, exchange gifts, and share festive meals. It's a time to cherish traditions, create memories, and embrace the true meaning of the season.",
+        "sports": "Sports encompass a wide range of physical activities that promote fitness, teamwork, and competition. From soccer to basketball, cricket to swimming, they captivate global audiences and unite people across cultures. Sports cultivate discipline, resilience, and camaraderie, inspiring individuals to push their limits and celebrate the triumph of human spirit."
     },
     {
         "image": "https://i.ibb.co/RDGfd46/image.jpg",
         "name": "Stanford College USA",
         "rating": 5,
         "admission": "27 July 2023",
-        "research": 8
+        "research": 8,
+        "event": "Christmas Day is a joyous celebration of love, family, and giving. It fills hearts with warmth, lights up homes with laughter, and spreads the spirit of hope. People gather, exchange gifts, and share festive meals. It's a time to cherish traditions, create memories, and embrace the true meaning of the season.",
+        "sports": "Sports encompass a wide range of physical activities that promote fitness, teamwork, and competition. From soccer to basketball, cricket to swimming, they captivate global audiences and unite people across cultures. Sports cultivate discipline, resilience, and camaraderie, inspiring individuals to push their limits and celebrate the triumph of human spirit."
     },
     {
         "image": "https://i.ibb.co/nbbqmmq/University-of-Massachusetts-Boston-University-Hall-exterior.jpg",
         "name": "Boston College USA",
         "rating": 4.9,
         "admission": "25 July 2023",
-        "research": 10
+        "research": 10,
+        "event": "Christmas Day is a joyous celebration of love, family, and giving. It fills hearts with warmth, lights up homes with laughter, and spreads the spirit of hope. People gather, exchange gifts, and share festive meals. It's a time to cherish traditions, create memories, and embrace the true meaning of the season.",
+        "sports": "Sports encompass a wide range of physical activities that promote fitness, teamwork, and competition. From soccer to basketball, cricket to swimming, they captivate global audiences and unite people across cultures. Sports cultivate discipline, resilience, and camaraderie, inspiring individuals to push their limits and celebrate the triumph of human spirit."
     },
     {
         "image": "https://i.ibb.co/TLLcBVg/20190526-COMM-procession024-0.jpg",
         "name": "Brown College USA",
         "rating": 4.9,
         "admission": "29 July 2023",
-        "research": 8
+        "research": 8,
+        "event": "Christmas Day is a joyous celebration of love, family, and giving. It fills hearts with warmth, lights up homes with laughter, and spreads the spirit of hope. People gather, exchange gifts, and share festive meals. It's a time to cherish traditions, create memories, and embrace the true meaning of the season.",
+        "sports": "Sports encompass a wide range of physical activities that promote fitness, teamwork, and competition. From soccer to basketball, cricket to swimming, they captivate global audiences and unite people across cultures. Sports cultivate discipline, resilience, and camaraderie, inspiring individuals to push their limits and celebrate the triumph of human spirit."
     },
     {
         "image": "https://i.ibb.co/hg7rXmW/wheelock-1-scaled-1.webp",
         "name": "Wheelock College USA",
         "rating": 4.8,
         "admission": "26 July 2023",
-        "research": 7
+        "research": 7,
+        "event": "Christmas Day is a joyous celebration of love, family, and giving. It fills hearts with warmth, lights up homes with laughter, and spreads the spirit of hope. People gather, exchange gifts, and share festive meals. It's a time to cherish traditions, create memories, and embrace the true meaning of the season.",
+        "sports": "Sports encompass a wide range of physical activities that promote fitness, teamwork, and competition. From soccer to basketball, cricket to swimming, they captivate global audiences and unite people across cultures. Sports cultivate discipline, resilience, and camaraderie, inspiring individuals to push their limits and celebrate the triumph of human spirit."
     },
     {
         "image": "https://i.ibb.co/TKqxB6D/9b17dd60-9f2f-4b39-ae5f-74eb529dbc5a-asu.webp",
         "name": "Arizona State College USA",
         "rating": 5,
         "admission": "29 July 2023",
-        "research": 9
+        "research": 9,
+        "event": "Christmas Day is a joyous celebration of love, family, and giving. It fills hearts with warmth, lights up homes with laughter, and spreads the spirit of hope. People gather, exchange gifts, and share festive meals. It's a time to cherish traditions, create memories, and embrace the true meaning of the season.",
+        "sports": "Sports encompass a wide range of physical activities that promote fitness, teamwork, and competition. From soccer to basketball, cricket to swimming, they captivate global audiences and unite people across cultures. Sports cultivate discipline, resilience, and camaraderie, inspiring individuals to push their limits and celebrate the triumph of human spirit."
     }
 
 ]

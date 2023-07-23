@@ -20,7 +20,7 @@ const Register = () => {
                     {/* <p className='text-red-600 text-lg'>{error}</p>
                     <p className='text-green-600 text-lg'>{success}</p> */}
 
-                    <button className='w-full bg-[#05b6d1] mx-auto rounded py-2 my-3 text-white font-semibold' >Register</button>
+                    <button className='w-full bg-[#05b6d1] mx-auto rounded py-3 my-3 text-white font-semibold' >Register</button>
                     <div className="text-center mt-4">
                         Already have an account?
                         <Link to="/login" className="px-2 py-1 ml-2 text-blue-700 font-semibold underline rounded">Login</Link>

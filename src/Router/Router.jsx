@@ -12,6 +12,8 @@ import ArtDrawing from "../Pages/Blog/ArtDrawing";
 import Business from "../Pages/Blog/Business";
 import Language from "../Pages/Blog/Language";
 import BasicScience from "../Pages/Blog/BasicScience";
+import Law from "../Pages/Blog/Law";
+import CollegeViewDetails from "../Pages/Colleges/CollegeViewDetails";
 
 const router = createBrowserRouter([
     {
@@ -69,6 +71,10 @@ const router = createBrowserRouter([
             {
                 path: "/law",
                 element: <Law />
+            },
+            {
+                path: "/college-view/:id",
+                element: <CollegeViewDetails />
             }
         ]
     }

@@ -36,7 +36,7 @@ const About = () => {
                             </div>
                         </div>
                         <p className='my-4'>Exploring the wonders of our universe, from quantum mysteries to distant galaxies. Unraveling complex topics in a reader-friendly way. Uniting science enthusiasts and sparking curiosity. Join us on a journey of discovery, where knowledge meets fascination, and science illuminates the path to understanding. Welcome to our captivating science blog.</p>
-                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold"><Link to="/science">Read More!</Link></button>
+                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/science">Read More!</Link></button>
                     </div>
                 </div>
                 <div className='mt-10'>
@@ -58,7 +58,7 @@ const About = () => {
                             </div>
                         </div>
                         <p className='my-4'>Unleashing Creativity: An Art and Drawing Blog for Aspiring Artists. Uncover tips, techniques, and inspiration to bring your imagination to life imagination to life on paper or canvas. From beginner tutorials to expert insights, join our vibrant community of art enthusiasts and embark on a journey of self-expression and artistic growth.</p>
-                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold"><Link to="/art">Read More!</Link></button>
+                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/art">Read More!</Link></button>
                     </div>
                 </div>
                 <div className='mt-10'>
@@ -80,7 +80,7 @@ const About = () => {
                             </div>
                         </div>
                         <p className='my-4'>Navigating Success: A Business and Management Hub. Expert insights, innovative strategies, and practical tips for entrepreneurs, executives, and aspiring business leaders. From effective leadership to market analysis, explore the dynamic landscape of commerce. Join us in unlocking the keys to sustainable growth and achieving excellence in the world of business.</p>
-                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold"><Link to="/business">Read More!</Link></button>
+                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/business">Read More!</Link></button>
                     </div>
                 </div>
                 <div className='mt-10'>
@@ -102,7 +102,7 @@ const About = () => {
                             </div>
                         </div>
                         <p className='my-4'>Unlocking Linguistic Horizons: Your Language Learning Companion. Explore the beauty of diverse languages and cultures. From vocabulary building to perfecting pronunciation, we offer practical tips, engaging exercises, and immersive experiences to help you become a Join us on this journey to embrace the power of language and connect with the world.</p>
-                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold"><Link to="/language">Read More!</Link></button>
+                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/language">Read More!</Link></button>
                     </div>
                 </div>
                 <div className='mt-10'>
@@ -124,13 +124,13 @@ const About = () => {
                             </div>
                         </div>
                         <p className='my-4'>Unraveling the Wonders: Basic Science Explored. Delve into the fundamentals of physics, chemistry, biology, and more. Simplified explanations and captivating discoveries await, making complex concepts accessible to all. Join us in quenching your curiosity and fostering a deeper understanding of the natural world that quenching your surrounds us.</p>
-                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold"><Link to="/basic-science">Read More!</Link></button>
+                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/basic-science">Read More!</Link></button>
                     </div>
                 </div>
                 <div className='mt-10'>
                     <img className='rounded-md h-[300px]' src={blog6} alt="" />
                     <div>
-                        <h1 className='text-xl font-bold my-4'>Basic Science</h1>
+                        <h1 className='text-xl font-bold my-4'>Law of Humanity</h1>
                         <div className='flex gap-4 items-center'>
                             <div className='flex gap-2 items-center'>
                                 <RiAdminFill className='text-[#05b6d1]' />
@@ -138,15 +138,15 @@ const About = () => {
                             </div>
                             <div className='flex gap-2 items-center'>
                                 <BiSolidFolderOpen className='text-[#05b6d1]' />
-                                <h1>Basic Science</h1>
+                                <h1>Law of Humanity</h1>
                             </div>
                             <div className='flex gap-2 items-center'>
                                 <MdTextsms className='text-[#05b6d1]' />
-                                <h1>19</h1>
+                                <h1>12</h1>
                             </div>
                         </div>
-                        <p className='my-4'>Unraveling the Wonders: Basic Science Explored. Delve into the fundamentals of physics, chemistry, biology, and more. Simplified explanations and captivating discoveries await, making complex concepts accessible to all. Join us in quenching your curiosity and fostering a deeper understanding of the natural world that quenching your surrounds us.</p>
-                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold"><Link to="/law">Read More!</Link></button>
+                        <p className='my-4'>Embracing the Law of Humanity: Protecting Dignity and Justice. Explore the legal principles that safeguard human rights, promote equality, and foster compassion. From international treaties to humanitarian law, we delve into the legal frameworks that shape a more just and compassionate world. Join us in advocating for a brighter future for all.</p>
+                        <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 text-white font-semibold hover:bg-[#0b96ac] duration-300"><Link to="/law">Read More!</Link></button>
                     </div>
                 </div>
             </div>

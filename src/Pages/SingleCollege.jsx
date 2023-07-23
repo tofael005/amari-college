@@ -1,6 +1,7 @@
+import { Link } from "react-router-dom";
 
-const SingleCollege = ({singleData}) => {
-    const { image, name, rating, admission, research } = singleData;
+const  SingleCollege = ({singleData}) => {
+    const { image, name, rating, admission, research, _id } = singleData;
     return (
         <div>
             <div className="border p-4 rounded-md shadow-md">
@@ -11,10 +12,10 @@ const SingleCollege = ({singleData}) => {
                     <p>Admission Date: <span className="font-semibold">{admission}</span></p>
                     <p>Research Center: {research}</p>
                 </div>
-                <button className="bg-[#05b6d1] block mx-auto my-6 w-full p-3 rounded-md hover:bg-[#0b96ac] duration-300 text-white font-semibold">View Details</button>
+                <button className="bg-[#05b6d1] block mx-auto my-6 w-full p-3 rounded-md hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to={`/college-view/${_id}`}>View Details</Link></button>
             </div>
         </div>
     );
 };
 
-export default SingleCollege;
+export default SingleCollege;  
