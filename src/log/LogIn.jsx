@@ -1,79 +1,72 @@
-
-import { FcGoogle } from 'react-icons/fc';
-import login from "../assets/log/login.png"
+import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from '../Context/AuthProvider';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../Context/AuthProvider';
 
 
 const LogIn = () => {
 
-    const { signIn, signInWithGoogle } = useAuth()
-
+    const [error, setError] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const { signIn, handleGoogleSignIn } =
+        useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location)
-    const from = location.state?.from?.pathname || "/"
+    const from = location.state?.from?.pathname || "/";
 
-    const hendleForm = (e) => {
-        e.preventDefault()
-        const form = e.target
-        const email = form.email.value;
-        const password = form.password.value
+    const handleLogin = (event) => {
+        event.preventDefault();
+        if ((email, password)) {
+            signIn(email, password)
+                .then((result) => {
+                    const user = result.user;
 
-
-        if (!email || !password) {
-            return
+                    navigate(from, { replace: true });
+                    event.target.reset();
+                })
+                .catch((error) => setError(error.message));
         }
-
-        if (password.length < 6) {
-            return
-        }
-
-        signIn(email, password)
-            .then(() => {
-                form.reset()
-                navigate(from, { replace: true })
+    };
+    const loginWithGoogle = () => {
+        handleGoogleSignIn()
+            .then((result) => {
+                const user = result.user;
+                navigate(from);
             })
-            .catch(error => {
-                console.log(error)
-            })
-    }
+            .catch((error) => setError(error.message));
+    };
 
-    const handleGoogle = () => {
-        signInWithGoogle()
-            .then(() => {
-                navigate(from)
-            })
-            .catch(() => { })
-    }
 
     return (
-        <div>
-            <main className="max-w-[1240px] mx-auto mt-14">
-                <div className='md:flex md:p-8 p-3  gap-6 justify-between'>
-                    <img className="w-full h-full" src={login} alt="" />
-
-                    <div className='py-5 bg-slate-100 rounded md:w-full mx-auto my-5'>
-                        <h1 className='text-center text-5xl text-[#05b6d1] underline font-bold mt-4 mb-8'>Login</h1>
-                        <form onSubmit={hendleForm} className="px-6">
-                            <label className="font-semibold" htmlFor="">Email</label>
-                            <input className='md:w-full p-3 mb-4 mt-1 w-full rounded' type="email" name="email" placeholder='Enter your email' required />
-                            <label className="font-semibold" htmlFor="">Password</label>
-                            <input className='md:w-full w-full p-3 mt-1 mb-2 rounded ' type="password" name='password' placeholder='Enter your password' required />
-                            {/* <p>{error}</p> */}
-
-                            <p className='text-blue-600 underline font-semibold  mb-8'><Link>Forget Password</Link></p>
-                            <button className='md:w-full w-full bg-[#05b6d1] mx-auto rounded p-3 my-2 text-white font-semibold'>Login</button>
-
-                            <p className='mt-2 text-center'> Create a new account? <Link to="/register" className='text-blue-600 font-semibold underline'> Register NOW</Link></p>
-                        </form>
-                        <button  onClick={handleGoogle} className='border-2 border-[#05b6d1] p-3 mt-4 rounded flex justify-center items-center gap-[6px] mx-auto'><FcGoogle className='text-[32px]' /><span>Continue with Google</span></button>
-                    </div>
-
+        <div className="max-w-[700px] mx-auto mt-24 p-4 border shadow-md rounded-md">
+            <form onSubmit={handleLogin}>
+                <div className='flex flex-col my-4'>
+                    <label htmlFor="email" className='text-[17px] font-semibold p-1'>Email</label>
+                    <input type="email" name="email" id="email" className='border rounded p-3 text-base' autoComplete='off' placeholder='Enter your email' required />
                 </div>
-            </main>
+                <div className='flex flex-col my-4'>
+                    <label htmlFor="password" className='text-[17px] font-semibold p-1'>Password</label>
+                    <input type="password" name="password" id="password" className='border rounded p-3 text-base' autoComplete='off' placeholder='Enter your password' required />
+                </div>
+
+
+                <button type='submit' className='bg-[#05b6d1] text-white w-full p-3 text-[21px] rounded mt-[10px]'>Login</button>
+                <p className='mt-[8px] text-center'>Create a new account? <Link to="/register" className='text-blue-700 underline'>Register Now</Link></p>
+                <div className='flex items-center justify-between mt-[25px] '>
+                    <hr className='w-[45%] bg-[#95A0A7]' />
+                    <p className='text-[#95A0A7]'>Or</p>
+                    <hr className='w-[45%] bg-[#95A0A7]' />
+                </div>
+                
+            </form>
+            <div className="flex gap-4 mb-7">
+                    <div onClick={loginWithGoogle} className='p-[10px] bg-[#d1f9ff] cursor-pointer border rounded w-full flex justify-center items-center gap-[6px] mt-[33px]'><FcGoogle className='text-[32px]' /><span>Continue with Google</span></div>
+                </div>
         </div>
+
     );
 };
+
 
 export default LogIn;

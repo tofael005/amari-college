@@ -1,11 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineClose } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import logo from "../assets/logo.png"
+import { AuthContext } from "../Context/AuthProvider";
+
 
 const NavBar = () => {
     const [toggle, setToggle] = useState()
+    const {user, logOut} = useContext(AuthContext)
+
     return (
         <div className="shadow-md">
             <div className="max-w-[1240px] mx-auto flex justify-between items-center p-4">
@@ -39,10 +43,18 @@ const NavBar = () => {
                     </li>
                     
 
-                    <li>{
+                    {/* <li>{
                          <button  className="bg-[#05b6d1] rounded px-6 py-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/login">LogIn</Link></button>
                     }
+                    </li> */}
+                      <li>{
+                            user?.photoURL ? <img className="w-[35px] h-[35px] rounded-full" src={user?.photoURL} title={user.displayName} alt="" /> : ""
+                        }
                     </li>
+                    <li>{
+                            user ? <button onClick={logOut} className="bg-[#05b6d1] px-4 py-2  text-white">LogOut</button> : <button className="bg-[#05b6d1] px-4 py-2 rounded text-white"><Link to="/login">Login</Link></button>
+                        }
+                    </li> 
                 </ul>
             </div>
         </div>
