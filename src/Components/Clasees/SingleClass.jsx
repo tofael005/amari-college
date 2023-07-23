@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const SingleClass = ({singleData}) => {
     const { image, title, seat, description } = singleData;
@@ -10,7 +11,7 @@ const SingleClass = ({singleData}) => {
                     <p>Seat: {seat}</p>
                     <p className="my-3">{description}</p>
                 </div>
-                <button className="block mx-auto bg-[#05b6d1] text-white px-4 py-2 rounded-full hover:bg-[#0b96ac] duration-300 font-semibold my-4">Join Now</button>
+                <button className="block mx-auto bg-[#05b6d1] text-white px-4 py-2 rounded-full hover:bg-[#0b96ac] duration-300 font-semibold my-4"><Link to="/admission">Join Now</Link></button>
             </div>
         </div>
     );

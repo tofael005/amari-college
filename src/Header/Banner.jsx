@@ -11,7 +11,11 @@ import ban3 from "../assets/banner/banner-3.webp"
 const Banner = () => {
     return (
         <div>
-            <div>
+            <div className="flex text-center justify-center mx-auto mt-10">
+                <input className="border w-[500px] p-3 rounded-s-md" type="search" name="" id="" placeholder="Search" />
+                <input className="border p-3 bg-[#05b6d1] rounded-e-md font-semibold hover:bg-[#0b96ac] duration-300" type="button" value="Search" />
+            </div>
+            <div className="mt-6">
                 <Swiper
                     spaceBetween={30}
                     centeredSlides={true}
@@ -24,7 +28,7 @@ const Banner = () => {
                     }}
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper md:h-[92vh]"
+                    className="mySwiper md:h-[75vh]"
                 >
                     <div>
                         <SwiperSlide><img src={ban1} alt="" /></SwiperSlide>

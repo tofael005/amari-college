@@ -52,7 +52,7 @@ const NavBar = () => {
                         }
                     </li>
                     <li>{
-                            user ? <button onClick={logOut} className="bg-[#05b6d1] px-4 py-2  text-white">LogOut</button> : <button className="bg-[#05b6d1] px-4 py-2 rounded text-white"><Link to="/login">Login</Link></button>
+                            user ? <button onClick={logOut} className="bg-[#05b6d1] px-4 py-2 font-bold rounded-md text-white">LogOut</button> : <button className="bg-[#05b6d1] px-4 py-2 font-bold rounded-md text-white"><Link to="/login">Login</Link></button>
                         }
                     </li> 
                 </ul>

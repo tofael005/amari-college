@@ -51,7 +51,7 @@ const LogIn = () => {
                 </div>
 
 
-                <button type='submit' className='bg-[#05b6d1] text-white w-full p-3 text-[21px] rounded mt-[10px]'>Login</button>
+                <button type='submit' className='bg-[#05b6d1] text-white w-full p-3 text-[21px] rounded mt-[10px] font-bold'>Login</button>
                 <p className='mt-[8px] text-center'>Create a new account? <Link to="/register" className='text-blue-700 underline'>Register Now</Link></p>
                 <div className='flex items-center justify-between mt-[25px] '>
                     <hr className='w-[45%] bg-[#95A0A7]' />
