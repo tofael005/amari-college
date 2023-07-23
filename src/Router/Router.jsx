@@ -16,6 +16,7 @@ import Law from "../Pages/Blog/Law";
 import CollegeViewDetails from "../Pages/Colleges/CollegeViewDetails";
 import Error from "../Pages/Error";
 import AdmitForm from "../Pages/AdmitForm"
+import PrivateRouter from "../Private/PrivateRouter";
 // import PrivateRouter from "../Private/PrivateRouter"
 
 const router = createBrowserRouter([
@@ -30,7 +31,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/college",
-                element: <College />
+                element: <PrivateRouter> <College /></PrivateRouter>
             },
             {
                 path: "/admission",
@@ -38,7 +39,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/myCollege",
-                element: <MyCollege />
+                element: <PrivateRouter><MyCollege /></PrivateRouter>
             },
             {
                 path: "/about",

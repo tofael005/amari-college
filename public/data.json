@@ -1,38 +1,38 @@
 [
     {
-        "image": "https://i.ibb.co/02h1JVh/class6.jpg",
-        "title": "Science and Technology",
-        "seat": 13,
-        "description": "Pushing the boundaries of innovation: The dynamic world of science and technology continues to amaze with groundbreaking discoveries, revolutionary advancements, and the promise of a future shaping human progress."
+      "collage_name": "Sunset Hills University",
+      "graduation_year": "2023",
+      "graduation_image": "https://i.ibb.co/HnZmzWv/baim-hanif-p-YWu-OMhtc6k-unsplash-min.jpg",
+      "description": "Sunset Hills University held its annual graduation ceremony in 2023, celebrating the achievements of its graduating students. The campus was adorned with vibrant decorations, and the atmosphere was filled with excitement and pride as graduates prepared to embark on their new journeys."
     },
     {
-        "image": "https://i.ibb.co/pZ2hw3Q/class5.jpg",
-        "title": "Art and Drawing",
-        "seat": 20,
-        "description": "Unleashing creativity through art and drawing: From traditional techniques to digital mediums, artists explore their imagination, express emotions, and captivate audiences, bridging cultures and leaving a lasting impact on society."
+      "collage_name": "Evergreen State College",
+      "graduation_year": "2022",
+      "graduation_image": "https://i.ibb.co/QkYSLTW/charles-deloye-2-Rou-MSg9-Rnw-unsplash-min.jpg",
+      "description": "In 2022, Evergreen State College honored its graduating class with a memorable commencement ceremony. Faculty, families, and friends gathered to applaud the accomplishments of the graduates, who demonstrated academic excellence and a commitment to making a positive impact on their communities."
     },
     {
-        "image": "https://i.ibb.co/j5YgB9t/class4.jpg",
-        "title": "Business and Management",
-        "seat": 16,
-        "description": "Navigating the corporate landscape: Business and management strategies evolve to meet global challenges, innovation, sustainable practices, and effective leadership, organizations towards success in an ever-changing marketplace."
+      "collage_name": "Harmony University",
+      "graduation_year": "2021",
+      "graduation_image": "https://i.ibb.co/YNjYB5w/joshua-hoehne-igg-WDx-HTAUQ-unsplash-min.jpg",
+      "description": "Harmony University celebrated its graduating students in 2021, commemorating the end of their academic journey and the beginning of a new chapter in their lives. The campus buzzed with joyous festivities, signifying the successful culmination of years of hard work and dedication."
     },
     {
-        "image": "https://i.ibb.co/PQ5YHY4/class2.jpg",
-        "title": "Language Learning",
-        "seat": 12,
-        "description": "Unlocking the world through language learning: Embracing new tongues opens doors to cultures, fosters global understanding, and enhances cognitive abilities, empowering individuals to communicate fluently in an interconnected world."
+      "collage_name": "Tranquil State Institute",
+      "graduation_year": "2020",
+      "graduation_image": "https://i.ibb.co/xH4PkjV/pang-yuhao-kd5cxw-ZOK4-unsplash-min.jpg",
+      "description": "Amid the challenges of 2020, Tranquil State Institute hosted a heartwarming graduation ceremony to honor its resilient graduates. The event served as a testament to the graduates' ability to adapt, persevere, and achieve their educational goals despite the uncertainties that year brought."
     },
     {
-        "image": "https://i.ibb.co/vVQdrNL/class3.jpg",
-        "title": "Basic Science",
-        "seat": 14,
-        "description": "Foundations of knowledge: Basic science unravels the fundamental principles governing the natural world, paving the way for groundbreaking discoveries, technological advancements, and a deeper understanding of the universe we inhabit."
+      "collage_name": "Meadowview College",
+      "graduation_year": "2019",
+      "graduation_image": "https://i.ibb.co/LtNsNbX/rut-miit-hp-RGrf-OIybc-unsplash-min.jpg",
+      "description": "Meadowview College bid farewell to its graduating class of 2019 with a grand ceremony, celebrating the students' accomplishments and potential for a bright future. The campus was abuzz with nostalgia and optimism, as the graduates prepared to embrace new opportunities."
     },
     {
-        "image": "https://i.ibb.co/ydxNgs1/class1.jpg",
-        "title": "Law of Humanity",
-        "seat": 17,
-        "description": "The Law of Humanity: A moral compass guiding legal principles to uphold human rights, dignity, and justice, advocating for equality, compassion, and protection of the vulnerable, shaping a more compassionate and just society."
+      "collage_name": "Gardenia Academy",
+      "graduation_year": "2018",
+      "graduation_image": "https://i.ibb.co/tC96QCw/vasily-koloda-8-Cq-Dv-Puo-k-I-unsplash-1-min.jpg",
+      "description": "In 2018, Gardenia Academy held a heartfelt graduation event, marking the end of a significant chapter in the lives of its students. The ceremony was filled with pride and emotion, as graduates reflected on their personal growth and the friendships they forged during their time at the academy."
     }
-]
+  ]
