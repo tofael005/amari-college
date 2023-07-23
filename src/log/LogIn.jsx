@@ -1,39 +1,79 @@
 
 import { FcGoogle } from 'react-icons/fc';
 import login from "../assets/log/login.png"
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useAuth } from '../Context/AuthProvider';
 
 
 const LogIn = () => {
 
+    const { signIn, signInWithGoogle } = useAuth()
+
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location)
+    const from = location.state?.from?.pathname || "/"
+
+    const hendleForm = (e) => {
+        e.preventDefault()
+        const form = e.target
+        const email = form.email.value;
+        const password = form.password.value
 
 
-        return (
-            <div>
-                <main className="max-w-[1240px] mx-auto mt-14">
-                    <div className='md:flex md:p-8 p-3  gap-6 justify-between'>
-                        <img className="w-full h-full" src={login} alt="" />
+        if (!email || !password) {
+            return
+        }
 
-                        <div className='py-5 bg-slate-100 rounded md:w-full mx-auto my-5'>
-                            <h1 className='text-center text-5xl text-[#05b6d1] underline font-bold mt-4 mb-8'>Login</h1>
-                            <form className="px-6">
-                                <label className="font-semibold" htmlFor="">Email</label>
-                                <input className='md:w-full p-3 mb-4 mt-1 w-full rounded' type="email" name="email" placeholder='Enter your email' required />
-                                <label className="font-semibold" htmlFor="">Password</label>
-                                <input className='md:w-full w-full p-3 mt-1 mb-2 rounded ' type="password" name='password' placeholder='Enter your password' required />
-                                {/* <p>{error}</p> */}
+        if (password.length < 6) {
+            return
+        }
 
-                                <p className='text-blue-600 underline font-semibold  mb-8'><Link>Forget Password</Link></p>
-                                <button className='md:w-full w-full bg-[#05b6d1] mx-auto rounded p-3 my-2 text-white font-semibold'>Login</button>
+        signIn(email, password)
+            .then(() => {
+                form.reset()
+                navigate(from, { replace: true })
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
 
-                                <p className='mt-2 text-center'> Create a new account? <Link to="/register" className='text-blue-600 font-semibold underline'> Register NOW</Link></p>
-                            </form>
-                            <button className='border-2 border-[#05b6d1] p-3 mt-4 rounded flex justify-center items-center gap-[6px] mx-auto'><FcGoogle className='text-[32px]' /><span>Continue with Google</span></button>
-                        </div>
+    const handleGoogle = () => {
+        signInWithGoogle()
+            .then(() => {
+                navigate(from)
+            })
+            .catch(() => { })
+    }
 
+    return (
+        <div>
+            <main className="max-w-[1240px] mx-auto mt-14">
+                <div className='md:flex md:p-8 p-3  gap-6 justify-between'>
+                    <img className="w-full h-full" src={login} alt="" />
+
+                    <div className='py-5 bg-slate-100 rounded md:w-full mx-auto my-5'>
+                        <h1 className='text-center text-5xl text-[#05b6d1] underline font-bold mt-4 mb-8'>Login</h1>
+                        <form onSubmit={hendleForm} className="px-6">
+                            <label className="font-semibold" htmlFor="">Email</label>
+                            <input className='md:w-full p-3 mb-4 mt-1 w-full rounded' type="email" name="email" placeholder='Enter your email' required />
+                            <label className="font-semibold" htmlFor="">Password</label>
+                            <input className='md:w-full w-full p-3 mt-1 mb-2 rounded ' type="password" name='password' placeholder='Enter your password' required />
+                            {/* <p>{error}</p> */}
+
+                            <p className='text-blue-600 underline font-semibold  mb-8'><Link>Forget Password</Link></p>
+                            <button className='md:w-full w-full bg-[#05b6d1] mx-auto rounded p-3 my-2 text-white font-semibold'>Login</button>
+
+                            <p className='mt-2 text-center'> Create a new account? <Link to="/register" className='text-blue-600 font-semibold underline'> Register NOW</Link></p>
+                        </form>
+                        <button  onClick={handleGoogle} className='border-2 border-[#05b6d1] p-3 mt-4 rounded flex justify-center items-center gap-[6px] mx-auto'><FcGoogle className='text-[32px]' /><span>Continue with Google</span></button>
                     </div>
-                </main>
-            </div>
-        );
-    };
 
-    export default LogIn;
+                </div>
+            </main>
+        </div>
+    );
+};
+
+export default LogIn;

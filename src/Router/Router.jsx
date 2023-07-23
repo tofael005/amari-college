@@ -14,11 +14,13 @@ import Language from "../Pages/Blog/Language";
 import BasicScience from "../Pages/Blog/BasicScience";
 import Law from "../Pages/Blog/Law";
 import CollegeViewDetails from "../Pages/Colleges/CollegeViewDetails";
+import Error from "../Pages/Error";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Root />,
+        errorElement: <Error />,
         children: [
             {
                 path: "/",
