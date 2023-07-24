@@ -15,7 +15,7 @@ const Admission = () => {
             <div className="overflow-x-auto ">
                 <table className="table ">
                     {/* head */}
-                    <thead className="text-center bg-slate-600 text-white mb-6">
+                    <thead className="text-center bg-slate-600 text-white mb-6 uppercase">
                         <tr>
                             <th>SL.No</th>
                             <th>College Name</th>
@@ -36,7 +36,7 @@ const Admission = () => {
                                     <td>{item?.research}</td>
                                     <td>{item?.admission}</td>
                                     <td>
-                                        <Link to={`/admitForm/${item?._id}`}>
+                                        <Link to="/admitForm">
                                             <button className="border  p-3  font-bold duration-300 bg-[#05b6d1] hover:text-white rounded-md">Apply Now</button>
                                         </Link>
                                     </td>

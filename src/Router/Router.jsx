@@ -31,11 +31,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "/college",
-                element: <PrivateRouter> <College /></PrivateRouter>
+                element: <College />
             },
             {
                 path: "/admission",
-                element: <Admission />
+                element: <PrivateRouter><Admission /></PrivateRouter>
             },
             {
                 path: "/myCollege",
@@ -83,7 +83,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/admitForm",
-                element: <AdmitForm />
+                element: <PrivateRouter> <AdmitForm /></PrivateRouter>
             }
         ]
     }

@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthProvider';
 
 const MyCollege = () => {
+    const { user } = useContext(AuthContext)
 
     const [colleges, setColleges] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:5000/myCollege")
+        fetch(`http://localhost:5000/myCollege?email=${user.email}`)
             .then(res => res.json())
             .then(data => setColleges(data))
     }, [])
@@ -15,7 +17,7 @@ const MyCollege = () => {
     return (
         <div className='max-w-[1240px] mx-auto mt-10'>
             <table className="table">
-                <thead className="text-center text-white bg-slate-600 mb-6">
+                <thead className="text-center text-white bg-slate-600 mb-6 uppercase">
                     <tr>
                         <th>SL.No</th>
                         <th>College Name</th>

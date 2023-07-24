@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Context/AuthProvider";
+import { updateProfile } from "firebase/auth";
+import Swal from "sweetalert2";
 
 
 const Register = () => {
@@ -23,6 +25,19 @@ const Register = () => {
 			registerUser(email, password)
 				.then((result) => {
 					const currentUser = result.user;
+
+                    if (currentUser) {
+                        Swal.fire({
+                            title: '',
+                            text: "Register Successfully!",
+                            icon: 'success',
+                            confirmButtonColor: '#05b6d1',
+                            confirmButtonText: 'Added'
+                        })
+        
+                    }
+
+
 					updateProfile(currentUser, { displayName: name, photoURL: photo });
 					setError("");
 					event.target.reset();

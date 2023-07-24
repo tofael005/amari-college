@@ -2,6 +2,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../Context/AuthProvider';
+import Swal from "sweetalert2";
 
 
 const LogIn = () => {
@@ -22,6 +23,17 @@ const LogIn = () => {
                 .then((result) => {
                     const user = result.user;
 
+                    if (user) {
+                        Swal.fire({
+                            title: '',
+                            text: "Login Successfully!",
+                            icon: 'success',
+                            confirmButtonColor: '#05b6d1',
+                            confirmButtonText: 'Added'
+                        })
+        
+                    }
+
                     navigate(from, { replace: true });
                     event.target.reset();
                 })
@@ -32,6 +44,17 @@ const LogIn = () => {
         handleGoogleSignIn()
             .then((result) => {
                 const user = result.user;
+
+                if (user) {
+                    Swal.fire({
+                        title: '',
+                        text: "Login Successfully!",
+                        icon: 'success',
+                        confirmButtonColor: '#05b6d1',
+                        confirmButtonText: 'Added'
+                    })
+    
+                }
                 navigate(from);
             })
             .catch((error) => setError(error.message));
