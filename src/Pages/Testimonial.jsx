@@ -1,44 +1,32 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { useContext, useEffect, useState } from 'react';
+import { AuthContext } from '../Context/AuthProvider';
+import FeedCard from './FeedCard';
 
 
 
 
 const Testimonial = () => {
+    const { user } = useContext(AuthContext)
+    const [feedback, useFeedback] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:5000/feedback")
+            .then(res => res.json())
+            .then(data => useFeedback(data))
+    }, [])
     return (
         <div className="mt-20">
             <h1 className="text-center my-3">Testimonial</h1>
             <h1 className="text-center my-3 text-3xl font-bold text-[#05b6d1]">What Parents Say!</h1>
             <div>
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        delay: 6500,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper  text-center h-[20vh] mt-7"
-                >
-                    <SwiperSlide>
-                    <div>
-                        <h1>Hello</h1>
-
-                    </div>
-                    </SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    
-                </Swiper>
+                <div>
+                    {
+                        feedback.map((feed, index) => <FeedCard key={index} feedData={feed} />)
+                    }
+                </div>
             </div>
-        </div >
+        </div>
     );
 };
 

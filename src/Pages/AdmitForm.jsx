@@ -17,7 +17,6 @@ const AdmitForm = () => {
 
   const handleSubmit = (e) =>{
     e.preventDefault();
-    console.log("ok")
     
     const myCollege = {
         image,

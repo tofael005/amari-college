@@ -17,6 +17,7 @@ import CollegeViewDetails from "../Pages/Colleges/CollegeViewDetails";
 import Error from "../Pages/Error";
 import AdmitForm from "../Pages/AdmitForm"
 import PrivateRouter from "../Private/PrivateRouter";
+import AdmitSuccess from "../Pages/AdmitSuccess";
 // import PrivateRouter from "../Private/PrivateRouter"
 
 const router = createBrowserRouter([
@@ -84,6 +85,10 @@ const router = createBrowserRouter([
             {
                 path: "/admitForm",
                 element: <PrivateRouter> <AdmitForm /></PrivateRouter>
+            },
+            {
+                path: "/success",
+                element: <AdmitSuccess />
             }
         ]
     }

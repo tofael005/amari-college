@@ -17,7 +17,7 @@ const About = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-6 px-3">
-                <div className='mt-10'>
+                <div className='mt-10 border p-3 rounded-md shadow-md'>
                     <img className='rounded-md h-[300px]' src={blog1} alt="" />
                     <div>
                         <h1 className='text-xl font-bold my-4'>Science and Technology</h1>
@@ -39,7 +39,7 @@ const About = () => {
                         <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/science">Read More!</Link></button>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 border p-3 rounded-md shadow-md'>
                     <img className='rounded-md h-[300px]' src={blog2} alt="" />
                     <div>
                         <h1 className='text-xl font-bold my-4'>Art and Drawing</h1>
@@ -61,7 +61,7 @@ const About = () => {
                         <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/art">Read More!</Link></button>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 border p-3 rounded-md shadow-md'>
                     <img className='rounded-md h-[300px]' src={blog3} alt="" />
                     <div>
                         <h1 className='text-xl font-bold my-4'>Business and Management</h1>
@@ -83,7 +83,7 @@ const About = () => {
                         <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/business">Read More!</Link></button>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 border p-3 rounded-md shadow-md'>
                     <img className='rounded-md h-[300px]' src={blog4} alt="" />
                     <div>
                         <h1 className='text-xl font-bold my-4'>Language Learning</h1>
@@ -105,7 +105,7 @@ const About = () => {
                         <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/language">Read More!</Link></button>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 border p-3 rounded-md shadow-md'>
                     <img className='rounded-md h-[300px]' src={blog5} alt="" />
                     <div>
                         <h1 className='text-xl font-bold my-4'>Basic Science</h1>
@@ -127,7 +127,7 @@ const About = () => {
                         <button className="bg-[#05b6d1] rounded-md px-4 py-2 mt-2 hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/basic-science">Read More!</Link></button>
                     </div>
                 </div>
-                <div className='mt-10'>
+                <div className='mt-10 border p-3 rounded-md shadow-md'>
                     <img className='rounded-md h-[300px]' src={blog6} alt="" />
                     <div>
                         <h1 className='text-xl font-bold my-4'>Law of Humanity</h1>

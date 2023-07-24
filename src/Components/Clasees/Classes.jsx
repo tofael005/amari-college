@@ -8,7 +8,7 @@ const Classes = () => {
 
 
     useEffect(() => {
-        fetch("http://localhost:5000/allClasses")
+        fetch("https://amari-sarver.vercel.app//allClasses")
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

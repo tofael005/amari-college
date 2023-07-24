@@ -8,7 +8,7 @@ const MyCollege = () => {
     const [colleges, setColleges] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myCollege?email=${user.email}`)
+        fetch(`https://amari-sarver.vercel.app/myCollege?email=${user.email}`)
             .then(res => res.json())
             .then(data => setColleges(data))
     }, [])
@@ -41,7 +41,7 @@ const MyCollege = () => {
                                 <td>{college.dateOfBirth}</td>
                                 <td>{college.address}</td>
                                 <td>
-                                    <button className="border  p-3  font-bold duration-300 bg-[#05b6d1] hover:text-white rounded-md"><Link to="/admission">Apply Now</Link></button>
+                                    <button className="border  p-3  font-bold duration-300 bg-[#05b6d1] hover:text-white rounded-md"><Link to="/success">Feedback</Link></button>
                                 </td>
                             </tr>
                         </>)
