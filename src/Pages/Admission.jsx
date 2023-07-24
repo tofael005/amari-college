@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Admission = () => {
     const [data, setData] = useState([]);
     useEffect(() => {
-        fetch("https://amari-sarver.vercel.app//allCollege")
+        fetch("https://amari-sarver.vercel.app/allCollege")
             .then((res) => res.json())
             .then((dat) => setData(dat));
     }, []);
