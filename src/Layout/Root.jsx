@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom';
 
 const Root = () => {
     return (
-        <div>
+        <div className="overflow-hidden">
             <NavBar />
             <div className="md:min-h-[calc(100vh-100px)]" >
                 <Outlet />

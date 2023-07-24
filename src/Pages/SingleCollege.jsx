@@ -12,7 +12,8 @@ const  SingleCollege = ({singleData}) => {
                     <p>Admission Date: <span className="font-semibold">{admission}</span></p>
                     <p>Research Center: {research}</p>
                 </div>
-                <button className="bg-[#05b6d1] block mx-auto my-6 w-full p-3 rounded-md hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to={`/college-view/${_id}`}>View Details</Link></button>
+                
+                <Link to={`/college-view/${_id}`}><button className="bg-[#05b6d1] block mx-auto my-6 w-full p-3 rounded-md hover:bg-[#0b96ac] duration-300 text-white font-semibold">View Details</button></Link>
             </div>
         </div>
     );

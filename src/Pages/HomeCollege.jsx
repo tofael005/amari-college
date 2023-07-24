@@ -37,7 +37,8 @@ const HomeCollege = () => {
                         <p>Admission Date: <span className="font-semibold"> 29 July 2023</span></p>
                         <p>Research Center: 9</p>
                     </div>
-                    <button className="bg-[#05b6d1] block mx-auto my-6 w-full p-3 rounded-md hover:bg-[#0b96ac] duration-300 text-white font-semibold"><Link to="/college">View Details</Link></button>
+                    <Link to="/college"><button className="bg-[#05b6d1] block mx-auto my-6 w-full p-3 rounded-md hover:bg-[#0b96ac] duration-300 text-white font-semibold">View Details</button></Link>
+                    
                 </div>
                 
             </div>

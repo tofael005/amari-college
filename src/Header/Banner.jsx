@@ -11,7 +11,7 @@ import ban3 from "../assets/banner/banner-3.webp"
 const Banner = () => {
     return (
         <div>
-            <div className="flex text-center justify-center mx-auto mt-10 ">
+            <div className="flex text-center justify-center mx-auto mt-10 px-6">
                 <input className="border w-[500px] p-3 rounded-s-md" type="search" name="" id="" placeholder="Search" />
                 <input className="border p-3 bg-[#05b6d1] rounded-e-md font-semibold hover:bg-[#0b96ac] duration-300 cursor-pointer" type="button" value="Search" />
             </div>
